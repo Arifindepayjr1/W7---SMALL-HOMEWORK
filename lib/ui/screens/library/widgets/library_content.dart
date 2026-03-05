@@ -40,7 +40,7 @@ class LibraryContent extends StatelessWidget {
                 song: songs[index],
                 isPlaying: playerState.currentSong == songs[index],
                 onTap: () {
-                  playerState.start(songs[index]);
+                  libraryViewModel.play(songs[index]);
                 },
               ),
             ),
